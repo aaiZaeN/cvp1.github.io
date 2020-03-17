@@ -23,6 +23,22 @@ body {
     flex-direction: column;
 }
 
+.photo {
+    overflow: hidden;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+#contact, #about_me {
+    margin: 15px;
+}
+
 #contact_title, #hobbies_title, #about_me_title {
     background-color: #044D6D;
     color: #378EB3;
@@ -32,8 +48,21 @@ body {
 /*PARTIE DROITE*/
 
 .rightblock {
-    width: 70%;
+    width: 65%;
     flex-wrap: wrap;
-
+    margin-left: 5%;
 }
 
+/*LIGNEs HORIZONTALE*/
+
+.border {
+    border-bottom: 2px solid #378EB3;
+}
+
+#training, #exp_pro, #recommendation {
+    color: #044D6D;
+}
+
+.fas fa-pencil-alt, .fas fa-briefcase, .fas fa-graduation-cap {
+    margin-right: 15px;
+}
