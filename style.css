@@ -5,7 +5,6 @@
     font-family: 'sinkin_sans300_light';
     src: url('SinkinSans-300Light-webfont.eot');
     src: url('SinkinSans-300Light-webfont.eot?#iefix') format('embedded-opentype'), 
-         url('SinkinSans-300Light-webfont.woff2') format('woff2'),
          url('SinkinSans-300Light-webfont.woff') format('woff'), 
          url('SinkinSans-300Light-webfont.ttf') format('truetype'), 
          url('SinkinSans-300Light-webfont.svg#sinkin_sans300_light') format('svg');
@@ -13,33 +12,19 @@
     font-style: normal;
 }
 
-@media all and (max-width: 900px)
+@media all and (max-width: 500px)
 {
-    .photo {
+    .page {
+        display: flex;
+    }
+
+    .pho to {
         display: none;
     }
 
-    .photo_responsive {
-        overflow: hidden;
-        -webkit-border-radius: 50px;
-        -moz-border-radius: 50px;
-        border-radius: 50px;
-        width: 90px;
-        height: 90px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 15px;
-    }
-
     .leftbar {
-        order: 3;
+        
         min-width: 100%;
-    }
-
-    .rightblock {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 100%;
     }
     
     #title_name, #title_dev {
@@ -47,11 +32,50 @@
     }
 
     .right_box {
-        width: auto;
+        width: 100%;
+        display: flex;
         text-align: center;
-        display: none;
         flex-direction: column;
-        
+        justify-content: center;        
+    }
+
+    .date {
+        margin:5px;
+        flex-grow: 1;
+        font-size: 15px;
+        width: auto;
+        justify-content: right;
+    }
+
+    .rightblock {
+        min-width: 90%;
+    }
+
+    .recommandation {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 5%;
+    }
+
+    .block_reco {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .box_reco {
+        margin-top: 0%;
+        text-align: center;
+    }
+
+    .circle {
+        margin-top: 3px;
+    }
+
+    #contact {
+        text-align: center;
     }
 }    
     
@@ -95,22 +119,26 @@ body {
 }
 
 #about_me {
+    width: 80%;
     justify-content: flex-end;
     text-align: justify;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 15px;
     flex: 1;
 }
 
 #contact {
-    font-size: 12px;
+    width: 80%;
+    font-size: calc(12px + 0.2vw);
     line-height: 15px;
-    margin-left: 10%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #hobbies {
-    margin-bottom: 5%;
+    margin-bottom: 20px;
+    bottom: 0px;
 }
 
 .fa-gamepad, .fa-futbol, .fa-leaf {
@@ -185,7 +213,8 @@ body {
 .right_box {
     display: grid;
     grid-template-columns: 3% 27% 70%;
-    font-size: 15px;    
+    font-size: 15px;
+    margin-bottom: 5%;
 }
 
 .date {
@@ -197,28 +226,30 @@ body {
     color: #044D6D;
     font-size: 75%;
     margin-top: 27px;
-    margin-left: 5px;
 }
 
 /*RECOMMANDATION*/
 
+.recommandation {
+    margin-bottom: 3%;
+}
+
 .block_reco {
     display: flex;
-    margin-top: 20px;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 0%; 
+    margin: 20px 10px 10px 0;
 }
 
 .box_reco {
-    margin-left: 65px;
-    margin-right: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
     width: 50%;
 }
 
-.recommandation {
-    margin-bottom: 2%;
+span {
+     display: block; 
 }
+
 
 /* Responsive design */
 
