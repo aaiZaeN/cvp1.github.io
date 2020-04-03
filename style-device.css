@@ -1,0 +1,142 @@
+@media (max-device-width: 834px)
+{
+
+.page { display: flex; }
+
+.leftBar { min-width: 100%; }
+
+#contact { text-align: center; }
+
+.rightBlock { min-width: 90%; }
+
+#titleName, #titleDev { text-align: center; }    
+
+.rightBox {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.circle { margin-top: 33px; }    
+
+.date {    
+    margin: 15px;
+    font-size: 15px;
+}
+
+
+.blockReco {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}    
+
+.boxReco {
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto 0 auto;    
+}    
+
+.photo {
+    margin-top: 5%;
+}
+
+    
+/*PROPRIETE PAGE*/
+
+
+p { font-size: calc(20px + 0.2vw); }
+
+
+/*TITRES GAUCHE*/
+
+#contactTitle, #hobbiesTitle, #aboutMeTitle {
+    background-color: #044D6D;
+    color: #378EB3;
+    text-align: center;
+    font-size: calc(20px + 0.2vw);
+}
+
+/*CONTACT*/
+
+#contact {
+    width: 80%;
+    font-size: calc(12px + 0.2vw);
+    margin: 0 auto 0 auto;
+}
+
+/*A PROPOS*/
+
+#aboutMe {
+    width: 80%;
+    justify-content: flex-end;
+    text-align: justify;
+    margin: 0 auto 0 auto;
+    font-size: calc(12px + 0.2vw);
+    flex: 1;
+}
+
+/*PARTIE DROITE*/
+/*NOM & PRENOM*/
+
+#titleName {
+    margin-bottom: -2%;
+    font-size: 3em;
+}
+
+#titleDev {
+    font-size: 2em;
+    margin-bottom: 10%;
+}
+
+/*TITRE DROITE*/
+
+#training, #expPro, #recommendation  {
+    display: inline;
+    margin-right: 2%;
+    font-size: 2em;
+}
+
+/*TEXTE DROITE*/
+
+.rightBox {
+    display: grid;
+    grid-template-columns: 3% 27% 70%;
+    font-size: 15px;
+    margin-bottom: 5%;
+}
+
+.date {
+    display: inline-flex;
+    margin: 25px 10% 0 0;
+    font-weight: bold;
+}
+.date p {
+    font-size: 1.5em;
+}
+
+.fa-circle {
+    color: #044D6D;
+    font-size: 0.3em;
+}
+
+/*RECOMMANDATION*/
+
+.recommandation p { font-size: 2em; }
+
+h4 { font-size: 2em; }
+
+.fa-graduation-cap, .fa-briefcase, .fa-pencil-alt { margin-right: 3%; }
+
+}
+
+/*Très petits formats*/
+
+@media (max-device-width: 320px){
+
+    .date p { font-size: 2em; }
+
+}

@@ -5,7 +5,6 @@
     font-family: 'sinkin_sans300_light';
     src: url('SinkinSans-300Light-webfont.eot');
     src: url('SinkinSans-300Light-webfont.eot?#iefix') format('embedded-opentype'), 
-         url('SinkinSans-300Light-webfont.woff2') format('woff2'),
          url('SinkinSans-300Light-webfont.woff') format('woff'), 
          url('SinkinSans-300Light-webfont.ttf') format('truetype'), 
          url('SinkinSans-300Light-webfont.svg#sinkin_sans300_light') format('svg');
@@ -13,48 +12,59 @@
     font-style: normal;
 }
 
-@media all and (max-width: 900px)
+/*RESPONSIVE DESIGN ( à déplacer! ) */
+
+@media (max-width: 769px)
 {
-    .photo {
-        display: none;
-    }
+    .page { display: flex; }
 
-    .photo_responsive {
-        overflow: hidden;
-        -webkit-border-radius: 50px;
-        -moz-border-radius: 50px;
-        border-radius: 50px;
-        width: 90px;
-        height: 90px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 15px;
-    }
+    .leftBar { min-width: 100%; }
 
-    .leftbar {
-        order: 3;
-        min-width: 100%;
-    }
+    #contact { text-align: center; }
 
-    .rightblock {
+    .rightBlock { min-width: 90%; }
+
+    #titleName, #titleDev { text-align: center; }
+
+    .rightBox {
         width: 100%;
-        display: grid;
-        grid-template-columns: 100%;
-    }
-    
-    #title_name, #title_dev {
+        display: flex;
         text-align: center;
+        flex-direction: column;
+        justify-content: center;
     }
 
-    .right_box {
-        width: auto;
-        text-align: center;
-        display: none;
+    .circle { margin-top: 3px; }
+
+    .date {
+        margin: 15px;
+        font-size: 12px;
+    }
+
+    .recommandation {
+        width: 100%;
+        display: flex;
+        justify-content: center;
         flex-direction: column;
+        margin-bottom: 5%;
+    }
+
+
+    .blockReco {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    .boxReco {
+        text-align: center;
+        justify-content: left;
         
     }
-}    
-    
+} 
+
+/*PROPRIETE PAGE*/
+
 body {
     max-width: 1280px;
     margin: auto;
@@ -64,170 +74,156 @@ body {
 .page {
     display: flex;
     flex-wrap: wrap; 
-    width: auto;
+    max-width: 1280px;
+    margin: auto;
+    font-family: sinkin_sans300_light;
 }
+
+.rightBlock {
+    width: 65%;
+    margin-left: 5%;
+}
+
+p { font-size: calc(12px + 0.2vw); }
 
 /*BARRE GAUCHE*/
 
-.leftbar {
-    background-color: #378EB3;
+.leftBar {
     width: 25%;
+    height: auto;
+    background-color: #378EB3;
     display: flex;
     flex-direction: column;
 }
 
 .photo {
-    overflow: hidden;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
-    width: 90px;
-    height: 90px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   margin: 15% auto 0 auto;
 }
 
-#contact_title, #hobbies_title, #about_me_title {
+/*TITRES GAUCHE*/
+
+#contactTitle, #hobbiesTitle, #aboutMeTitle {
     background-color: #044D6D;
     color: #378EB3;
     text-align: center;
 }
 
-#about_me {
+/*CONTACT*/
+
+#contact {
+    width: 80%;
+    font-size: 15em;
+    margin: 0 auto 0 auto;
+}
+
+/*A PROPOS*/
+
+#aboutMe {
+    width: 80%;
     justify-content: flex-end;
     text-align: justify;
-    margin-left: 10%;
-    margin-right: 10%;
-    font-size: 15px;
+    margin: 0 auto 0 auto;
+    font-size: ;
     flex: 1;
 }
 
-#contact {
-    font-size: 12px;
-    line-height: 15px;
-    margin-left: 10%;
-}
+/*LOISIRS*/
 
 #hobbies {
-    margin-bottom: 5%;
+    margin-bottom: 20px;
+    bottom: 0px;
 }
 
+/*ICONS LOISIRS*/
+
 .fa-gamepad, .fa-futbol, .fa-leaf {
+    height: 20px;
+    width: 20px;
     color: #044D6D;
     border-radius: 50%;
     border-color: #044D6D;
     border-style: solid;
     border-width: 2px;
-    height: 20px;
-    width: 20px;
     padding: 5%;
-    margin-right: 5%;
-    margin-left: auto;
+    margin: 0 5% 0 auto;
 }
 
-#icons_hobbies {
-    text-align: center;
-    
-}
+#iconsHobbies { text-align: center; }
 
 /*PARTIE DROITE*/
-
-
-.rightblock {
-    width: 65%;
-    margin-left: 5%;
-}
-
 /*NOM & PRENOM*/
 
-#name {
-    color: #044D6D;
-}
+#name { color: #044D6D; }
 
-#title_name {
+#titleName {
     margin-bottom: -2%;
-    font-size: 40px;
+    font-size: 2em;
 }
 
-#title_dev {
-    font-size: 20px;
+#titleDev {
+    font-size: 1.3em;
     margin-bottom: 10%;
 }
 
-#dev {
-    border-bottom: 2px solid #378EB3;
-}
+#dev { border-bottom: 2px solid #378EB3; }
+
 /*LIGNEs HORIZONTALE*/
 
-.border {
-    border-bottom: 2px solid #378EB3;
-}
+.border { border-bottom: 2px solid #378EB3; }
 
 /*TITRE DROITE*/
 
-#training, #exp_pro, #recommendation  {
+#training, #expPro, #recommendation  {
     display: inline;
     margin-right: 15px;
-    font-size: 20px;
+    font-size: 1em;
 }
 
 /*COULEUR ICONS*/
 
 .fa-graduation-cap, .fa-briefcase, .fa-pencil-alt {
     color: #044D6D;
-    margin-right: 10px;
-    font-size: 25px;
+    margin-right: ;
+    font-size: 1.5em;
 }
 
 /*TEXTE DROITE*/
 
-.right_box {
+.rightBox {
     display: grid;
     grid-template-columns: 3% 27% 70%;
-    font-size: 15px;    
+    font-size: 1em;
+    margin-bottom: 5%;
 }
 
 .date {
     display: inline-flex;
-    margin-right: 10%;
+    margin: 6px 15% 0 0;
+    font-weight: bold;
 }
 
 .fa-circle {
     color: #044D6D;
     font-size: 75%;
     margin-top: 27px;
-    margin-left: 5px;
 }
 
 /*RECOMMANDATION*/
 
-.block_reco {
+.blockReco {
     display: flex;
-    margin-top: 20px;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 0%; 
+    margin: 20px 10px 10px 0;
 }
 
-.box_reco {
-    margin-left: 65px;
-    margin-right: 5px;
+.boxReco {
+    margin: 0 5% 0 5%;
     width: 50%;
+    font-size: 1em;
 }
 
-.recommandation {
-    margin-bottom: 2%;
+.boxReco p {
+    font-size: 1em;
 }
-
-/* Responsive design */
-
-@media all and (min-width: 900px)
-{
-    .photo_responsive {
-        display: none;
-    }
-}
-
-
-
