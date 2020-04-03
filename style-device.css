@@ -1,48 +1,48 @@
 @media (max-device-width: 834px)
 {
-    .page { display: flex; }
 
-    .leftBar { min-width: 100%; }
+.page { display: flex; }
 
-    #contact { text-align: center; }
+.leftBar { min-width: 100%; }
 
-    .rightBlock { min-width: 90%; }
+#contact { text-align: center; }
 
-    #titleName, #titleDev { text-align: center; }
+.rightBlock { min-width: 90%; }
 
-    .rightBox {
-        width: 100%;
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        justify-content: center;
-    }
+#titleName, #titleDev { text-align: center; }    
 
-    .circle { margin-top: 33px; }
+.rightBox {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
 
-    .date {
-        margin: 15px;
-        font-size: 15px;
-    }
+.circle { margin-top: 33px; }    
+
+.date {    
+    margin: 15px;
+    font-size: 15px;
+}
 
 
-    .blockReco {
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+.blockReco {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}    
 
-    .boxReco {
-        text-align: center;
-        justify-content: center;
-        margin: 0 auto 0 auto;    
-    }
+.boxReco {
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto 0 auto;    
+}    
 
-    .photo
-    {
-        margin-top: 5%;
-    }
+.photo {
+    margin-top: 5%;
+}
 
     
 /*PROPRIETE PAGE*/
