@@ -12,9 +12,9 @@
     font-style: normal;
 }
 
-/*RESPONSIVE DESIGN*/
+/*RESPONSIVE DESIGN ( à déplacer! ) */
 
-@media(max-width: 768px)
+@media (max-width: 769px)
 {
     .page { display: flex; }
 
@@ -23,7 +23,7 @@
     #contact { text-align: center; }
 
     .rightBlock { min-width: 90%; }
-    
+
     #titleName, #titleDev { text-align: center; }
 
     .rightBox {
@@ -31,14 +31,14 @@
         display: flex;
         text-align: center;
         flex-direction: column;
-        justify-content: center;        
+        justify-content: center;
     }
 
     .circle { margin-top: 3px; }
 
     .date {
         margin: 15px;
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .recommandation {
@@ -49,18 +49,19 @@
         margin-bottom: 5%;
     }
 
+
     .blockReco {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: left;
     }
 
     .boxReco {
-        margin-top: 0%;
         text-align: center;
-        justify-content: center;
+        justify-content: left;
+        
     }
-}    
+} 
 
 /*PROPRIETE PAGE*/
 
@@ -96,11 +97,10 @@ p { font-size: calc(12px + 0.2vw); }
 }
 
 .photo {
-    width: 90px;
-    height: 90px;
-    overflow: hidden;
-    border-radius: 50px;
-    margin: 15px auto 0 auto;
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   margin: 15% auto 0 auto;
 }
 
 /*TITRES GAUCHE*/
@@ -115,7 +115,7 @@ p { font-size: calc(12px + 0.2vw); }
 
 #contact {
     width: 80%;
-    font-size: calc(12px + 0.2vw);
+    font-size: 15em;
     margin: 0 auto 0 auto;
 }
 
@@ -126,7 +126,7 @@ p { font-size: calc(12px + 0.2vw); }
     justify-content: flex-end;
     text-align: justify;
     margin: 0 auto 0 auto;
-    font-size: 15px;
+    font-size: ;
     flex: 1;
 }
 
@@ -160,11 +160,11 @@ p { font-size: calc(12px + 0.2vw); }
 
 #titleName {
     margin-bottom: -2%;
-    font-size: 40px;
+    font-size: 2em;
 }
 
 #titleDev {
-    font-size: 20px;
+    font-size: 1.3em;
     margin-bottom: 10%;
 }
 
@@ -179,15 +179,15 @@ p { font-size: calc(12px + 0.2vw); }
 #training, #expPro, #recommendation  {
     display: inline;
     margin-right: 15px;
-    font-size: 20px;
+    font-size: 1em;
 }
 
 /*COULEUR ICONS*/
 
 .fa-graduation-cap, .fa-briefcase, .fa-pencil-alt {
     color: #044D6D;
-    margin-right: 10px;
-    font-size: 25px;
+    margin-right: ;
+    font-size: 1.5em;
 }
 
 /*TEXTE DROITE*/
@@ -195,13 +195,13 @@ p { font-size: calc(12px + 0.2vw); }
 .rightBox {
     display: grid;
     grid-template-columns: 3% 27% 70%;
-    font-size: 15px;
+    font-size: 1em;
     margin-bottom: 5%;
 }
 
 .date {
     display: inline-flex;
-    margin: 6px 10% 0 0;
+    margin: 6px 15% 0 0;
     font-weight: bold;
 }
 
@@ -219,6 +219,11 @@ p { font-size: calc(12px + 0.2vw); }
 }
 
 .boxReco {
-    margin: 0 auto 0 auto;
+    margin: 0 5% 0 5%;
     width: 50%;
+    font-size: 1em;
+}
+
+.boxReco p {
+    font-size: 1em;
 }
