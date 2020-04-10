@@ -32,8 +32,6 @@ body {
     margin-left: 5%;
 }
 
-
-
 /*BARRE GAUCHE*/
 
 .leftBar {
@@ -121,7 +119,7 @@ body {
 
 .border { border-bottom: 2px solid #378EB3; }
 
-/*TITRE DROITE*/
+/*TITRES DROITE*/
 
 #training, #expPro, #recommendation  {
     display: inline;
@@ -162,11 +160,7 @@ body {
     text-align: left;
 }
 
-.rightText {
-    margin-top: 0%;
-}
-
-/*RECOMMANDATION*/
+/*RECOMMANDATIONS*/
 
 .blockReco {
     display: flex;
@@ -178,4 +172,3 @@ body {
     width: 75%;
     text-align: center;
 }
-

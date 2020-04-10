@@ -58,20 +58,19 @@
 @media all and (max-width: 320px)
 {
 
-.rightBox {
-    display: grid;
-    grid-template-columns: 25% 75%;
+    .rightBox {
+        display: grid;
+        grid-template-columns: 25% 75%;
 }
 
-.date {
-    margin-top: 8%;
+    .date {
+        margin-top: 8%;
 }
 
-.rightText {
-    margin-left: 10%;
+    .rightText {
+        margin-left: 10%;
 }
 
-.circle { display: none; }    
+    .circle { display: none; }    
 
-}
 }
