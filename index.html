@@ -1,9 +1,9 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="style-device.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-device.css">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/0a7b5fa7fb.js" crossorigin="anonymous"></script>
@@ -16,7 +16,7 @@
                     <!--BARRE GAUCHE-->
     <aside class="leftBar">
                             <!--Photo-->
-        <img class="photo" src="portrait.jpg" alt="portrait">
+        <img class="photo" src="photo.jpg" alt="portrait">
                             <!--Contact-->
         <h3 id="contactTitle">Contact</h3>
         <div id="contact">
@@ -43,9 +43,11 @@
     </aside>
                     <!--PARTIE DROITE-->
     <section class="rightBlock">          
-                            <!-- Titre-->            
-        <h1 id="titleName"><span id="name">Maxence</span> Maucourant</h1>  
-        <h2 id="titleDev"><span id='dev'>Dével</span>oppeur web freelance</h2> 
+                            <!-- Titre--> 
+        <header>                               
+            <h1 id="titleName"><span id="name">Maxence</span> Maucourant</h1>  
+            <h2 id="titleDev"><span id='dev'>Dével</span>oppeur web freelance</h2>
+        </header>     
                             <!--Formation-->
         <div class='formation'>
             <div class="right_box_titlebar">
@@ -61,8 +63,20 @@
                     <p>Depuis Mars 2020</p>
                 </div>
                 <div class="rightText">
-                    <h4 id="openclassrooms">Openclassrooms</h4>
+                    <h4>Openclassrooms</h4>
                     <p>Parcours de formation en ligne en vue de l'obtention du titre professionnel "RNCP32173" Développeur Web.</p>
+                </div>
+            </div>
+            <div class="rightBox">
+                <div class='circle'>
+                    <i class="fas fa-circle"></i>
+                </div>
+                <div class="date">
+                    <p>Mars 2020</p>
+                </div>
+                <div class="rightText">
+                    <h4>Openclassrooms</h4>
+                    <p>Certificat de réussite HTML5 & CSS3.</p>
                 </div>
             </div>
         </div>
@@ -125,7 +139,7 @@
             </div>
         </div>
                             <!--Recommandation-->
-        <div class='recommandation'>                  
+        <footer>                  
             <i class="fas fa-pencil-alt"></i>
             <h3 id="recommendation">Recommandation</h3>
             <div class="border"></div> <!--Ligne-->
@@ -143,7 +157,7 @@
                     Mail: hello@openclassrooms.com</p>
                 </div>
             </div>
-        </div>
+        </footer>
     </section>    
 </div>
 </body>
