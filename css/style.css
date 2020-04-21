@@ -3,11 +3,11 @@
 
 @font-face {
     font-family: 'sinkin_sans300_light';
-    src: url('SinkinSans-300Light-webfont.eot');
-    src: url('SinkinSans-300Light-webfont.eot?#iefix') format('embedded-opentype'), 
-         url('SinkinSans-300Light-webfont.woff') format('woff'), 
-         url('SinkinSans-300Light-webfont.ttf') format('truetype'), 
-         url('SinkinSans-300Light-webfont.svg#sinkin_sans300_light') format('svg');
+    src: url('../polices/SinkinSans-300Light-webfont.eot');
+    src: url('../polices/SinkinSans-300Light-webfont.eot?#iefix') format('embedded-opentype'), 
+         url('../polices/SinkinSans-300Light-webfont.woff') format('woff'), 
+         url('../polices/SinkinSans-300Light-webfont.ttf') format('truetype'), 
+         url('../polices/SinkinSans-300Light-webfont.svg#sinkin_sans300_light') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -91,7 +91,7 @@ body {
     border-width: 2px;
     vertical-align: middle;
     text-align: center;
-    margin: 3% 2% 5% 2%;
+    margin: 3% 2% 10% 2%;
 }
 
 #iconsHobbies {
