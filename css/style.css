@@ -144,13 +144,13 @@ body {
 
 .date {
     display: inline-flex;
-    margin: 4% 5% 0 0;
+    margin: 2% 5% 0 0;
     font-weight: bold;
     justify-content: left;
 }
 
 .circle {
-    margin-top: 20px
+    margin-top: 17px
 }
 
 .fa-circle, .fa-dot-circle {
