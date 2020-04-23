@@ -1,12 +1,7 @@
 
-@media all and (min-width: 1440px)
-{
-    .circle {
-        margin-top: 20px;
-    }
-}
 
-@media all and (max-width: 800px)
+
+@media all and (max-width: 834px)
 {
     .photo {
         margin-top: 5%;
@@ -29,7 +24,7 @@
     }
 
     .circle {
-        margin: 22px 0 0 0;
+        margin: 25px 0 0 0;
     }
 
     .blockReco {
@@ -46,6 +41,13 @@
         
     }
 } 
+
+@media all and (max-width: 600px)
+{
+    .circle {
+        margin-top: 22px;
+    }
+}
 
 @media all and (max-width: 415px)
 {
